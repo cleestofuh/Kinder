@@ -5,7 +5,7 @@ function newChallenge(e) { 
     e.preventDefault();
 
     var challenge = document.getElementById('challengetext');
-    var newText = Math.floor((Math.random() * 3));
+    var newText = Math.floor((Math.random() * 6));
 
     switch(newText) {
         case 0:
@@ -16,6 +16,15 @@ function newChallenge(e) { 
             break;
         case 2:
             challenge.innerHTML = "DONATE TO CHARITY";
+            break;
+        case 3:
+            challenge.innerHTML = "HOLD THE DOOR FOR SOMEONE";
+            break;
+        case 4:
+            challenge.innerHTML = "PAY FOR PARKING FOR SOMEONE";
+            break;
+        case 5:
+            challenge.innerHTML = "DONATE BLOOD";
             break;
         default:
             challenge.innerHTML = "GIVE SOMEONE A COMPLIMENT";
