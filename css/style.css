@@ -67,3 +67,7 @@ p {
 .vertical-align {
   margin-top: 10%;
 }
+
+#func {
+  height: 600px;
+}
