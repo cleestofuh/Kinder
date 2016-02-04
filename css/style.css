@@ -53,6 +53,7 @@ body {
 .btn:hover {
   background-color: white;
   color: #ED888B;
+  border: 2px solid #ED888B;
 }
 
 p {

@@ -52,10 +52,10 @@
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <a href="#" class="btn btn-lg animated slideInLeft" type="button" style="float: right;">love yourself</a>
+          <button class="btn btn-lg animated slideInLeft" type="button" style="float: right;" data-toggle="modal" data-target="#yourModal">love yourself</button>
         </div>
         <div class="col-sm-6">
-          <a href="#" class="btn btn-lg animated slideInRight" type="button">love others</a>
+          <button class="btn btn-lg animated slideInRight" type="button" data-toggle="modal" data-target="#otherModal">love others</button>
         </div>
       </div>
 			<div class="row">
@@ -63,10 +63,74 @@
 					<a href="data.html" class="btn btn-lg animated slideInUp" type="button">kinders</a>
 				</div>
 			</div>
+
+
+
+						<!-- Modal -->
+			<div class="modal fade" id="yourModal" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">add kinder</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+							  <fieldset class="form-group">
+							    <label for="exampleInputEmail1">what did you do?</label>
+							    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ex. Ate salad">
+							    <small class="text-muted">what is something you did for yourself today?</small>
+							  </fieldset>
+							  <fieldset class="form-group">
+							    <label for="exampleTextarea">description</label>
+							    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Ex. I chose to order a salad instead of pizza today! Feels great to eat healthy."></textarea>
+							    <small class="text-muted">how did it make you feel?</small>
+								</fieldset>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-lg">Submit</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+						<!-- Modal -->
+			<div class="modal fade" id="otherModal" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">add kinder</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+							  <fieldset class="form-group">
+							    <label for="exampleInputEmail1">what did you do?</label>
+							    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ex. Paid for Bobby's lunch.">
+							    <small class="text-muted">what is something you did for someone else today?</small>
+							  </fieldset>
+							  <fieldset class="form-group">
+							    <label for="exampleTextarea">description</label>
+							    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Ex. I bought paid for Bobby's pizza today while he went to the bathroom. The smile on his face said it all."></textarea>
+							    <small class="text-muted">how did it make you feel?</small>
+								</fieldset>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-lg" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
     </div>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
 	</body>
 </html>
