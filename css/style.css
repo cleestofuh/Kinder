@@ -15,10 +15,9 @@ body {
 }
 .nav.navbar-nav li a {
   color: white;
+  font-size: 30pt;
 }
-.navbar-brand {
-  color: white !important;
-}
+
 .navbar.center {
     text-align: center;
 }
@@ -42,6 +41,7 @@ body {
   text-align: center;
 }
 
+/* STREAKS */
 .homestreak {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #fff;
@@ -58,7 +58,19 @@ body {
 
 .boxed{
   border: 1px solid white;
+  margin-bottom: 35px;
 }
+
+#streak1 {
+  -webkit-animation-delay: 0.3s;
+}
+#streak2 {
+  -webkit-animation-delay: 0.2s;
+}
+#streak3 {
+  -webkit-animation-delay: 0.1s;
+}
+
 
 .btn {
   margin: 20px;
@@ -86,4 +98,6 @@ p {
   margin-top: 10%;
 }
 
-
+#challenges {
+  height: 600px;
+}

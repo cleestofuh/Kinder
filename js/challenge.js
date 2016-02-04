@@ -2,7 +2,7 @@ $("#anotherone").click(newChallenge);
 
 var challenge;
 function appendChallenge(challenge) {
-  $('#func').append("<h1 class='animated slideInRight'id='challengetext'\
+  $('#challenges').append("<h1 class='animated slideInRight'id='challengetext'\
   style='font-size:100pt;font-weight:600;color:white;'>" + challenge + "</h1>")
 }
 
