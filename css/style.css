@@ -101,6 +101,11 @@ p {
 .clickable {
     cursor: pointer;
 }
+.chart {
+  min-width: 310px;
+  height: 200px;
+  margin-bottom: 10px;
+}
 
 /* STREAKS */
 .homestreak {
