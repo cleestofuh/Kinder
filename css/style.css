@@ -1,6 +1,13 @@
 body {
   background-color: #ED888B;
 }
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+    color: white;
+    text-align: center;
+}
 .navbar {
   background-color: rgba(255, 255, 255, 0);
   border: 0;
@@ -26,13 +33,43 @@ body {
     display:inline-block;
     float: none;
 }
+.navbar-brand {
+  color: white !important;
+}
+.nav-head {
+  font-size: 28pt;
+}
 
+.btn {
+  margin: 20px;
+  background-color: #ED888B;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 200px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #ED888B;
+  border: 2px solid #ED888B;
+}
+
+.vertical-align {
+  margin-top: 10%;
+}
+/* INDEX */
 .hometitle {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
   color: #fff;
   text-align: center;
   font-size: 200pt;
+}
+#loveYourself {
+  float: right;
+}
+#loveOthers {
+  float: left;
 }
 
 .homep {
@@ -80,33 +117,31 @@ body {
   -webkit-animation-delay: 0.1s;
 }
 
-
-.btn {
-  margin: 20px;
-  background-color: #ED888B;
-  border: 2px solid #fff;
-  color: #fff;
-  width: 200px;
-}
-
-.btn:hover {
-  background-color: white;
-  color: #ED888B;
-  border: 2px solid #ED888B;
-}
-
-p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 300;
-    font-size: 16pt;
-    color: white;
-    text-align: center;
-}
-
-.vertical-align {
-  margin-top: 10%;
-}
-
+/* CHALLENGE */
 #challenges {
   height: 600px;
+}
+#challengetext {
+  font-size:100pt;
+  font-weight:600;
+  color:white;
+}
+
+@media (max-width: 767px) {
+    .hometitle {
+      font-size: 100pt;
+    }
+    #loveYourself {
+      float: none;
+    }
+    #loveOthers {
+      float: none;
+    }
+    #challenges {
+      height: 300px;
+    }
+    #challengetext {
+      font-size: 50pt;
+    }
+
 }

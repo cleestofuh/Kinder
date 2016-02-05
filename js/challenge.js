@@ -1,21 +1,20 @@
 $("#anotherone").click(newChallenge);
 
-var challenge;
 function appendChallenge(challenge) {
-  $('#challenges').append("<h1 class='animated slideInRight'id='challengetext'\
-  style='font-size:100pt;font-weight:600;color:white;'>" + challenge + "</h1>")
+  $('#challenges').append("<h1 class='animated slideInRight'id='challengetext'>" + challenge + "</h1>");
 }
 
 function newChallenge(e) {
   e.preventDefault();
-  $("#challengetext").remove();
-  var texterino = pickChallenge();
+  $("#challengetext").remove();;
+  texterino = pickChallenge();
   appendChallenge(texterino);
 }
 
 function pickChallenge() {
-  var newText = Math.floor((Math.random() * 6));
+  var newText = Math.floor((Math.random() * 12));
   var challenger;
+
   switch(newText) {
       case 0:
           challenger = "GIVE SOMEONE A COMPLIMENT";
@@ -35,41 +34,27 @@ function pickChallenge() {
       case 5:
           challenger = "DONATE BLOOD";
           break;
+      case 6:
+          challenger = "SHARE YOUR LUNCH";
+          break;
+      case 7:
+          challenger = "WALK FRIEND TO CLASS";
+          break;
+      case 8:
+          challenger = "SAY HI TO SOMEONE NEW";
+          break;
+      case 9:
+          challenger = "SIT WITH SOMEONE SITTING ALONE";
+          break;
+      case 10:
+          challenger = "BAKE NEIGHBOR COOKIES";
+          break;
+      case 11:
+          challenger = "GIVE SOMEONE A HUG";
+          break;
       default:
           challenger = "GIVE SOMEONE A COMPLIMENT";
           break;
   }
   return challenger;
 }
-/*
-function newChallenge(e) { 
-    // prevent the page from reloading 
-    e.preventDefault();
-
-    var challenge = document.getElementById('challengetext');
-    var newText = Math.floor((Math.random() * 6));
-
-    switch(newText) {
-        case 0:
-            challenge.innerHTML = "GIVE SOMEONE A COMPLIMENT";
-            break;
-        case 1:
-            challenge.innerHTML = "PAY FOR FRIEND'S LUNCH";
-            break;
-        case 2:
-            challenge.innerHTML = "DONATE TO CHARITY";
-            break;
-        case 3:
-            challenge.innerHTML = "HOLD THE DOOR FOR SOMEONE";
-            break;
-        case 4:
-            challenge.innerHTML = "PAY FOR PARKING FOR SOMEONE";
-            break;
-        case 5:
-            challenge.innerHTML = "DONATE BLOOD";
-            break;
-        default:
-            challenge.innerHTML = "GIVE SOMEONE A COMPLIMENT";
-            break;
-    }
-};*/
