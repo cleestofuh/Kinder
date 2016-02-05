@@ -1,4 +1,6 @@
-body {
+html, body {
+  width: 100%;
+  overflow-x: hidden;
   background-color: #ED888B;
 }
 p {
@@ -142,7 +144,9 @@ p {
     height: 300px;
   }
   #challengetext {
-    font-size: 50pt;
+    font-size: 40pt;
+    text-align: left;
+    margin: 20px;
   }
 
 }
