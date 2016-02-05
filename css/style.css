@@ -130,6 +130,21 @@ p {
   -webkit-animation-delay: 0.1s;
 }
 
+.friends {
+  list-style-type: none;
+  font-family:'Open Sans Condensed', sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size:20pt;
+
+}
+
+.friend-streaks{
+  display:none;
+  color: #fff;
+  font-size: 10pt;
+}
+
 /* CHALLENGE */
 #challenges {
   height: 600px;
