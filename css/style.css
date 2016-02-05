@@ -95,9 +95,11 @@ p {
 .glyphicon {
   color: #fff;
   font-size: 30px;
-  postion: absolute;
-  bottom: 0;
+  padding: 5px;
   float: right;
+}
+.clickable {
+    cursor: pointer;
 }
 
 /* STREAKS */
@@ -159,9 +161,9 @@ p {
     height: 300px;
   }
   #challengetext {
-    font-size: 40pt;
+    font-size: 30pt;
     text-align: left;
-    margin: 20px;
+    margin: 10px;
   }
 
 }
