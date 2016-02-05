@@ -135,7 +135,9 @@ p {
     height: 300px;
   }
   #challengetext {
-    font-size: 45pt;
+    font-size: 40pt;
+    text-align: left;
+    margin: 20px;
   }
 
 }
