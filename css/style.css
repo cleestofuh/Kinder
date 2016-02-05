@@ -41,6 +41,15 @@ body {
   text-align: center;
 }
 
+/* HELP */
+.glyphicon {
+  color: #fff;
+  font-size: 30px;
+  postion: absolute;
+  bottom: 0;
+  float: right;
+}
+
 /* STREAKS */
 .homestreak {
   font-family: 'Open Sans Condensed', sans-serif;
