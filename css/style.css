@@ -95,10 +95,15 @@ p {
 .glyphicon {
   color: #fff;
   font-size: 30px;
-  postion: absolute;
   padding: 5px;
-  bottom: 0;
   float: right;
+}
+
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  color: white;
 }
 
 /* STREAKS */
