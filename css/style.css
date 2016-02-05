@@ -77,6 +77,17 @@ p {
   color: #fff;
   text-align: center;
 }
+@media (max-width: 767px) {
+    .hometitle {
+      font-size: 100pt;
+    }
+    #loveYourself {
+      float: none;
+    }
+    #loveOthers {
+      float: none;
+    }
+}
 
 /* STREAKS */
 .homestreak {
@@ -117,22 +128,12 @@ p {
   font-weight:600;
   color:white;
 }
-
 @media (max-width: 767px) {
-    .hometitle {
-      font-size: 100pt;
-    }
-    #loveYourself {
-      float: none;
-    }
-    #loveOthers {
-      float: none;
-    }
-    #challenges {
-      height: 300px;
-    }
-    #challengetext {
-      font-size: 50pt;
-    }
+  #challenges {
+    height: 300px;
+  }
+  #challengetext {
+    font-size: 50pt;
+  }
 
 }
