@@ -98,12 +98,8 @@ p {
   padding: 5px;
   float: right;
 }
-
-a {
-  text-decoration: none !important;
-}
-a:hover {
-  color: white;
+.clickable {
+    cursor: pointer;
 }
 
 /* STREAKS */
