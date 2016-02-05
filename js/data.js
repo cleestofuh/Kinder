@@ -75,7 +75,7 @@ $(function () {
             style: {
               color: 'white'
             },
-            text: 'DAILY KINDERS',
+            text: 'WEEKLY KINDERS',
             x: -20 //center
         },
         xAxis: {
@@ -134,7 +134,7 @@ $(function () {
             style: {
               color: 'white'
             },
-            text: 'DAILY KINDERS',
+            text: 'MONTHLY KINDERS',
             x: -20 //center
         },
         xAxis: {
