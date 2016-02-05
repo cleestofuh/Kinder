@@ -5,6 +5,13 @@ $(function () {
               type: 'line',
               backgroundColor: 'rgba(255, 255, 255, 0.3)'
         },
+        plotOptions: {
+          series: {
+            animation: {
+              duration: 1000
+            }
+          }
+        },
         title: {
             style: {
               color: 'white'
@@ -57,6 +64,13 @@ $(function () {
               type: 'line',
               backgroundColor: 'rgba(255, 255, 255, 0.3)'
         },
+        plotOptions: {
+          series: {
+            animation: {
+              duration: 1500
+            }
+          }
+        },
         title: {
             style: {
               color: 'white'
@@ -108,6 +122,13 @@ $(function () {
               polar: true,
               type: 'line',
               backgroundColor: 'rgba(255, 255, 255, 0.3)'
+        },
+        plotOptions: {
+          series: {
+            animation: {
+              duration: 2200
+            }
+          }
         },
         title: {
             style: {
