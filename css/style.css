@@ -66,6 +66,7 @@ p {
   color: #fff;
   text-align: center;
   font-size: 200pt;
+  margin-top: -20px;
 }
 #loveYourself {
   float: right;
@@ -78,6 +79,7 @@ p {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #fff;
   text-align: center;
+  margin-top: -5px;
 }
 @media (max-width: 767px) {
     .hometitle {
@@ -101,10 +103,12 @@ p {
 .clickable {
     cursor: pointer;
 }
+/* KINDERS */
 .chart {
   min-width: 310px;
   height: 200px;
   margin-bottom: 10px;
+  border: 1px solid white;
 }
 #day {
   -webkit-animation-delay: 0.0s;
