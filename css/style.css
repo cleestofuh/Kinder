@@ -52,7 +52,7 @@ p {
 
 .btn:hover {
   background-color: white;
-  color: #ED888B;
+  color: #ED888B !important;
   border: 2px solid #ED888B;
 }
 
@@ -155,14 +155,38 @@ p {
   font-family:'Open Sans Condensed', sans-serif;
   color: #fff;
   text-align: center;
-  font-size:20pt;
+  font-size: 20pt;
 
 }
 
-.friend-streaks{
-  display:none;
+.fr {
+  display: none;
+}
+
+.friendsInfo{
+  list-style-type: none;
+  font-family:'Open Sans Condensed', sans-serif;
   color: #fff;
-  font-size: 10pt;
+  text-align: center;
+}
+
+h3{
+  font-size: 15pt;
+}
+
+#friend1, #friend2, #friend3, #friend4{
+
+  color: #fff;
+  font-size: 20pt;
+}
+
+a.friendButton {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
 }
 
 /* CHALLENGE */
