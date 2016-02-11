@@ -100,11 +100,22 @@
 							    <label for="exampleTextarea">description</label>
 							    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Ex. I chose to order a salad instead of pizza today! Feels great to eat healthy."></textarea>
 							    <small class="text-muted">how did it make you feel?</small>
-								</fieldset>
+							  </fieldset>
+							  <fieldset class="form-group">
+							  	<label for="exampleTextarea">how Kinder did you feel?</label>
+							  	<input type="range"  min="0" max="5" value="0" steps="1" onchange="showValue(this.value)"/>
+							  	<span id="range">0</span>
+								<script type="text/javascript">
+								function showValue(newValue)
+								{
+									document.getElementById("range").innerHTML=newValue;
+								}
+								</script>
+							  </fieldset>
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-lg">Submit</button>
+							<a href="data.html" type="submit" class="btn btn-lg">Submit</a>
 						</div>
 					</div>
 
@@ -131,11 +142,22 @@
 							    <label for="exampleTextarea">description</label>
 							    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Ex. I paid for Bobby's pizza today while he went to the bathroom. The smile on his face said it all."></textarea>
 							    <small class="text-muted">how did it make you feel?</small>
-								</fieldset>
+							  </fieldset>
+							  <fieldset class="form-group">
+							  	<label for="exampleTextarea">how Kinder did you feel?</label>
+							  	<input type="range"  min="0" max="10" value="0" steps="1" onchange="showValue(this.value)"/>
+							  	<span id="range">0</span>
+								<script type="text/javascript">
+								function showValue(newValue)
+								{
+									document.getElementById("range").innerHTML=newValue;
+								}
+								</script>
+							  </fieldset>
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-lg">Submit</button>
+							<a href="data.html" type="submit" class="btn btn-lg">Submit</a>
 						</div>
 					</div>
 
