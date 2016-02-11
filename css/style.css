@@ -144,6 +144,17 @@ p {
     cursor: pointer;
 }
 /* KINDERS */
+
+#recentData ul li {
+    padding-bottom:5px;
+}
+
+#recentData ul{
+    display: inline;
+    padding-left: 0;
+    margin-left: 0;
+}
+
 #recentDataTitle{
   font-size: 40pt;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -169,13 +180,13 @@ ul {
   margin-bottom: 10px;
   border: 1px solid white;
 }
-#day {
+#week {
   -webkit-animation-delay: 0.0s;
 }
-#week {
+#month {
   -webkit-animation-delay: 0.5s;
 }
-#month {
+#year {
   -webkit-animation-delay: 1s;
 }
 

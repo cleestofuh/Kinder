@@ -1,5 +1,5 @@
 $(function () {
-    $('#day').highcharts({
+    $('#week').highcharts({
         chart: {
               polar: true,
               type: 'line',
@@ -16,7 +16,7 @@ $(function () {
             style: {
               color: 'white'
             },
-            text: 'DAILY KINDERS',
+            text: 'WEEK',
             x: -20 //center
         },
         xAxis: {
@@ -58,7 +58,7 @@ $(function () {
             data: [0, 3, 4, 2, 1, 0, 0]
         }]
     });
-    $('#week').highcharts({
+    $('#month').highcharts({
         chart: {
               polar: true,
               type: 'line',
@@ -75,7 +75,7 @@ $(function () {
             style: {
               color: 'white'
             },
-            text: 'WEEKLY KINDERS',
+            text: 'MONTH',
             x: -20 //center
         },
         xAxis: {
@@ -117,7 +117,7 @@ $(function () {
             data: [0, 3, 4, 2, 1]
         }]
     });
-    $('#month').highcharts({
+    $('#year').highcharts({
         chart: {
               polar: true,
               type: 'line',
@@ -134,7 +134,7 @@ $(function () {
             style: {
               color: 'white'
             },
-            text: 'MONTHLY KINDERS',
+            text: 'YEAR',
             x: -20 //center
         },
         xAxis: {

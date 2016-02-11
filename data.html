@@ -15,6 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/animate.css" type="text/css">
+	<link href="css/hover.css" rel="stylesheet" media="all">
 
 </head>
 
@@ -59,12 +60,12 @@
 		        	</button>
 				  </li>
 				  <li>
-				  	<button type="button" class="btnRecent" data-toggle="modal" data-target="#dailyModal2">
+				  	<button type="button" class="btnRecent" data-toggle="modal" data-target="#dailyModal1">
 		            	WALKED SOMEONE TO CLASS
 		        	</button>
 				  </li>
 				  <li>
-				  	<button type="button" class="btnRecent" data-toggle="modal" data-target="#dailyModal3">
+				  	<button type="button" class="btnRecent" data-toggle="modal" data-target="#dailyModal1">
 		            	HELPED AN OLD LADY CROSS THE STREET
 		        	</button>
 				  </li>
@@ -73,10 +74,17 @@
 		</div>
 	</div>
 
+
+	<div>
+		<div id="recentDataTitle" class="animated zoomIn">
+			YOUR KINDER DATA
+		</div>
+	</div>
+
     <div class="container">
-      <div id="day" class="animated zoomIn chart"></div>
-      <div id="week" class="animated zoomIn chart"></div>
-      <div id="month" class="animated zoomIn chart"></div>
+      <div onclick="location.href='chart_info.html'" id="week" class="animated zoomIn chart hvr-shrink"></div>
+      <div onclick="location.href='chart_info.html'" id="month" class="animated zoomIn chart hvr-shrink"></div>
+      <div onclick="location.href='chart_info.html'" id="year" class="animated zoomIn chart hvr-shrink"></div>
     </div>
 
     <!-- THIS IS FOR THE HELP BUTTON -->
