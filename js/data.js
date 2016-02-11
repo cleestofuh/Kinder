@@ -42,7 +42,7 @@ $(function () {
 
         },
         tooltip: {
-            valueSuffix: 'KINDERS'
+            valueSuffix: ' KINDERS'
         },
         legend: {
             layout: 'vertical',
