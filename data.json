@@ -1,26 +1,28 @@
-[
-  {
-    "datamodal": "dailyModal1",
-    "act": "BOUGHT FOOD FOR SOMEONE",
-    "description": "I bought food for Eunice. I'm happy now.",
-    "rating": "4"
-  },
-  {
-    "datamodal": "dailyModal2",
-    "act": "WALKED SOMEONE TO CLASS",
-    "description": "I bought food for Eunice. I'm happy now.",
-    "rating": "2"
-  },
-  {
-    "datamodal": "dailyModal3",
-    "act": "HELPED AN OLD LADY CROSS THE STREET",
-    "description": "I bought food for Eunice. I'm happy now.",
-    "rating": "2"
-  },
-  {
-    "datamodal": "dailyModal4",
-    "act": "SAY GOODLUCK TO MY FRIEND BEFORE MIDTERM",
-    "description": "Hopefully Eunice will get an A.",
-    "rating": "2"
-  }
-]
+{
+  "kinders" :[
+    {
+      "datamodal": "dailyModal1",
+      "act": "BOUGHT FOOD FOR SOMEONE",
+      "description": "I bought food for Eunice. I'm happy now.",
+      "rating": "4"
+    },
+    {
+      "datamodal": "dailyModal2",
+      "act": "WALKED SOMEONE TO CLASS",
+      "description": "I bought food for Eunice. I'm happy now.",
+      "rating": "2"
+    },
+    {
+      "datamodal": "dailyModal3",
+      "act": "HELPED AN OLD LADY CROSS THE STREET",
+      "description": "I bought food for Eunice. I'm happy now.",
+      "rating": "2"
+    },
+    {
+      "datamodal": "dailyModal4",
+      "act": "SAY GOODLUCK TO MY FRIEND BEFORE MIDTERM",
+      "description": "Hopefully Eunice will get an A.",
+      "rating": "2"
+    }
+  ]
+}
