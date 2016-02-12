@@ -49,7 +49,6 @@
 
 
 
-
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -60,9 +59,10 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-sm-4">
-          <div id="streak2" class="boxed animated bounceInDown">
+          <div id="{{streakid}}" class="boxed animated bounceInDown">
             <h3 class="homestreak"> YOUR LONGEST STREAK </h3>
             <h1 class="num">30</h1>
             <h3 class="homestreak">days</h3>
@@ -79,7 +79,7 @@
           <div id="streak4" class="boxed animated bounceInDown">
             <h3 class="homestreak"> TOTAL KINDERS</h3>
             <h1 class="num">52</h1>
-            <h3 class="homestreak">days</h3>
+            <h3 class="homestreak">kinders</h3>
           </div>
         </div>
       </div>
@@ -91,32 +91,33 @@
               <div class="row">
                 <div class="span 5">
 
-
-                  <div id="friend1">
+                  {{#each streak}}
+                  <div id="{{id}}">
                     <div class="text-center">
                       <button type="button" class="btn btn-lg hvr-shrink">
-                          FRIEND 1
+                          {{name}}
                       </button>
                     </div>
                     <div class="row">
                       <div class="fr friendsInfo animated bounceIn">
                         <div>
-                          <h3>CURRENT STREAK</h3>
+                          <h3>CURRENT STREAK: {{current}} days</h3>
                         </div>
                         <div>
-                          <h3>LONGEST STREAK</h3>
+                          <h3>LONGEST STREAK: {{longest}} days</h3>
                         </div>
                         <div>
-                          <h3>MOST KINDERS</h3>
+                          <h3>MOST KINDERS: {{most}} kinders</h3>
                         </div>
                         <div>
-                          <h3>TOTAL KINDERS</h3>
+                          <h3>TOTAL KINDERS: {{total}} kinders</h3>
                         </div>
                       </div>
                     </div>
                   </div>
+                  {{/each}}
 
-
+                  <!--
                   <div id="friend2">
                     <div class="text-center">
                       <button type="button" class="btn btn-lg hvr-shrink">
@@ -191,8 +192,7 @@
                     </div>
                   </div>
 
-
-
+              -->
 
                 </div>
               </div>

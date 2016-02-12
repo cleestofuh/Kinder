@@ -1,9 +1,8 @@
 var friendNumber = 0;
+var streakjson = require('../streak.json');
 
-$("#friend1").click(showStreak);
-$("#friend2").click(showStreak);
-$("#friend3").click(showStreak);
-$("#friend4").click(showStreak);
+var data = JSON.parse(streakjson);
+$(data[id]).click(showStreak);
 
 function showStreak(e) {
   e.preventDefault();
@@ -11,6 +10,5 @@ function showStreak(e) {
   var friendID = "#" + theID;
   $(friendID).find(".fr").toggle();
   console.log(theID);
-  //texterino = pickChallenge();
-  //appendChallenge(texterino);
 }
+
