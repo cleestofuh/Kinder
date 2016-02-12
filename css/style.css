@@ -57,7 +57,7 @@ p {
   color: #fff;
   width: 250px;
   -moz-border-radius:10px;
-  -webkit-border-radius:10px; 
+  -webkit-border-radius:10px;
 }
 
 .btnRecent:hover{
@@ -81,19 +81,7 @@ p {
   padding: 0!important;
 }
 
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px; /* Adjusts for spacing */
-}
 
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
 /* INDEX */
 
 #ex1Slider .slider-selection {

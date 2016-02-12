@@ -49,12 +49,14 @@
 		<div class="text-center">
 			<div id="recentData" class="animated zoomIn">
 				<ul>
+					{{#each kinderact}}
 				  <li>
-				  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#dailyModal1">
-		            	BOUGHT FOOD FOR SOMEONE
+				  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+		            	{{act}}
 		        	</button>
 				  </li>
-				  <li>
+					{{/each}}
+				<!--  <li>
 				  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#dailyModal1">
 		            	WALKED SOMEONE TO CLASS
 		        	</button>
@@ -63,7 +65,7 @@
 				  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#dailyModal1">
 		            	HELPED AN OLD LADY CROSS THE STREET
 		        	</button>
-				  </li>
+				  </li>-->
 				</ul>
 			</div>
 		</div>
@@ -72,21 +74,24 @@
     	<span class="glyphicon glyphicon-question-sign animated slideInUp clickable" aria-hidden="true" data-toggle="modal" data-target="#helpModal"></span>
   	</div>
 
-  	  <div class="modal fade" id="dailyModal1" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">bought food for someone</h4>
-            </div>
-            <div class="modal-body">
-              <h5><b>Description</b><br></h5>
-              <h5>I bought food for my friend today! He was pretty hungry and he didn't have any money left, so I spotted him for lunch.</h5>
-              <h5><b>Your Kinder Rating: </b> 4<br></h5>
-            </div>
-        </div>
-      </div>
+		{{#each kinderact}}
+	  	  <div class="modal fade" id="{{datamodal}}" role="dialog">
+	        <div class="modal-dialog">
+	          <!-- Modal content -->
+	          <div class="modal-content">
+	            <div class="modal-header">
+	              <button type="button" class="close" data-dismiss="modal">&times;</button>
+	              <h4 class="modal-title">{{act}}</h4>
+	            </div>
+	            <div class="modal-body">
+	              <h5><b>Description</b><br></h5>
+	              <h5>{{description}}</h5>
+	              <h5><b>Your Kinder Rating: </b>{{rating}}<br></h5>
+	            </div>
+	        </div>
+	      </div>
+			</div>
+		{{/each}}
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
