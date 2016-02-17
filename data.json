@@ -1,28 +1,55 @@
 {
-  "kinders" :[
+  "yourkinders" :[
     {
-      "datamodal": "dailyModal1",
+      "datamodal": "ykModal1",
+      "act": "ATE SALAD",
+      "description": "I ATE SALAD INSTEAD OF MCDONALS. IM HEALTHY.",
+      "rating": "4"
+    },
+    {
+      "datamodal": "ykModal2",
+      "act": "WENT TO THE GYM",
+      "description": "WENT TO THE GYM AT 9AM THIS MORNING. FEELS GREAT!!",
+      "rating": "5"
+    },
+    {
+      "datamodal": "ykModal3",
+      "act": "FINISHED MY HOMEWORK EARLYT",
+      "description": "I FINISHED MY HOMEWORK TWO DAYS BEFORE IT WAS DUE. I HAVE SO MUCH FREE TIME NOW.",
+      "rating": "3"
+    },
+    {
+      "datamodal": "ykModal4",
+      "act": "I TOOK THE DAY TO RELAX",
+      "description": "LAST WEEK WAS SO STRESSFUL. TAKING THE DAY OFF FEELS SO GOOD.",
+      "rating": "2"
+    }
+  ],
+
+  "otherkinders" :[
+    {
+      "datamodal": "okModal1",
       "act": "BOUGHT FOOD FOR SOMEONE",
       "description": "I bought food for Eunice. I'm happy now.",
       "rating": "4"
     },
     {
-      "datamodal": "dailyModal2",
+      "datamodal": "okModal2",
       "act": "WALKED SOMEONE TO CLASS",
-      "description": "I bought food for Eunice. I'm happy now.",
-      "rating": "2"
+      "description": "I made Eunice go to class. I'm happy now.",
+      "rating": "5"
     },
     {
-      "datamodal": "dailyModal3",
+      "datamodal": "okModal3",
       "act": "HELPED AN OLD LADY CROSS THE STREET",
-      "description": "I bought food for Eunice. I'm happy now.",
-      "rating": "2"
+      "description": "I walked an old lady named Eunice. I'm happy now.",
+      "rating": "1"
     },
     {
-      "datamodal": "dailyModal4",
+      "datamodal": "okModal4",
       "act": "SAY GOODLUCK TO MY FRIEND BEFORE MIDTERM",
       "description": "Hopefully Eunice will get an A.",
-      "rating": "2"
+      "rating": "1"
     }
   ],
 
@@ -52,5 +79,5 @@
     "total": "123"
   }
   ]
-  
+
 }

@@ -1,20 +1,25 @@
 var datajson = require('../data.json');
-
+var i = 5;
+var j = 5;
 exports.giveData = function(req, res){
+
   var newKinderYou = {
-        "datamodal": "dailyModal5",
+        "datamodal": "ykModal" + i,
         "act": req.query.whatyoudo,
         "description": req.query.howyoufeel,
         "rating": req.query.rating
     };
 
   var newKinderOther = {
-        "datamodal": "dailyModal5",
-        "act": req.query.whatyoudo,
-        "description": req.query.howyoufeel,
-        "rating": req.query.rating
+        "datamodal": "okModal5" + j,
+        "act": req.query.whatyoudoO,
+        "description": req.query.howyoufeelO,
+        "rating": req.query.ratingO
     };
 
-  datajson["kinders"].push(newKinderYou);
-	res.render('data', {kinderact:datajson["kinders"]});
+  datajson["yourkinders"].push(newKinderYou);
+  datajson["otherkinders"].push(newKinderOther);
+  i++;
+  j++;
+	res.render('data', {kinderact:datajson["yourkinders"]});
 };
