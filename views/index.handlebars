@@ -91,18 +91,18 @@
 							<h4 class="modal-title">add kinder</h4>
 						</div>
 						<div class="modal-body">
-							<form>
-							  <fieldset class="form-group">
+							<form id="yourself-form" role="form" method="get" action="/data">
+							  <div class="form-group">
 							    <label for="whatyoudo">what did you do?</label>
-							    <input type="text" class="form-control" id="whatyoudo" placeholder="Ex. Ate salad">
-							  </fieldset>
-							  <fieldset class="form-group">
+							    <input type="text" class="form-control" id="whatyoudo" name="whatyoudo" placeholder="Ex. Ate salad">
+							  </div>
+							  <div class="form-group">
 							    <label for="howyoufeel">description</label>
-							    <textarea class="form-control" id="howyoufeel" rows="3" placeholder="Ex. I chose to order a salad instead of pizza today! Feels great to eat healthy."></textarea>
-							  </fieldset>
-							  <fieldset class="form-group">
+							    <textarea class="form-control" id="howyoufeel" name="howyoufeel" rows="3" placeholder="Ex. I chose to order a salad instead of pizza today! Feels great to eat healthy."></textarea>
+							  </div>
+							  <div class="form-group">
 							  	<label for="howkinderyoufeel">how Kinder did you feel?</label>
-							  	<input id="howkinderyoufeel" type="range"  min="0" max="5" value="0" steps="1" onchange="showValue(this.value)"/>
+							  	<input id="howkinderyoufeel" name="rating" type="range"  min="0" max="5" value="0" steps="1" onchange="showValue(this.value)"/>
 							  	<span id="range">0</span>
 								<script type="text/javascript">
 								function showValue(newValue)
@@ -110,14 +110,11 @@
 									document.getElementById("range").innerHTML=newValue;
 								}
 								</script>
-							  </fieldset>
+							</div>
+								<input type="submit" class="btn btn-lg" value="Submit"/>
 							</form>
 						</div>
-						<div class="modal-footer">
-							<a href="data" type="submit" class="btn btn-lg">Submit</a>
-						</div>
 					</div>
-
 				</div>
 			</div>
 						<!-- Modal -->
@@ -131,20 +128,18 @@
 							<h4 class="modal-title">add kinder</h4>
 						</div>
 						<div class="modal-body">
-							<form>
-							  <fieldset class="form-group">
+							<form id="other-form" role="form" method="get" action="/data">
+							  <div class="form-group">
 							    <label for="exampleInputEmail1">what did you do?</label>
-							    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ex. Paid for Bobby's lunch.">
-							    <small class="text-muted">what is something you did for someone else today?</small>
-							  </fieldset>
-							  <fieldset class="form-group">
+							    <input type="text" class="form-control" id="whatyoudo-o" name="whatyoudo-o" placeholder="Ex. Paid for Bobby's lunch.">
+							  </div>
+							  <div class="form-group">
 							    <label for="exampleTextarea">description</label>
-							    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Ex. I paid for Bobby's pizza today while he went to the bathroom. The smile on his face said it all."></textarea>
-							    <small class="text-muted">how did it make you feel?</small>
-							  </fieldset>
-							  <fieldset class="form-group">
+							    <textarea class="form-control" id="howyoufeel-o" name="howyoufeel-o" rows="3" placeholder="Ex. I paid for Bobby's pizza today while he went to the bathroom. The smile on his face said it all."></textarea>
+							  </div>
+							  <div class="form-group">
 							  	<label for="exampleTextarea">how Kinder did you feel?</label>
-							  	<input type="range"  min="0" max="10" value="0" steps="1" onchange="showValue(this.value)"/>
+							  	<input type="range" name="rating" min="0" max="10" value="0" steps="1" onchange="showValue(this.value)"/>
 							  	<span id="range">0</span>
 								<script type="text/javascript">
 								function showValue(newValue)
@@ -152,11 +147,9 @@
 									document.getElementById("range").innerHTML=newValue;
 								}
 								</script>
-							  </fieldset>
+								</div>
+								<input type="submit" class="btn btn-lg" value="Submit"/>
 							</form>
-						</div>
-						<div class="modal-footer">
-							<a href="data" type="submit" class="btn btn-lg">Submit</a>
 						</div>
 					</div>
 
@@ -196,5 +189,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
+
 	</body>
 </html>
