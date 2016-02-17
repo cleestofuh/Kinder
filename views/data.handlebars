@@ -101,7 +101,9 @@
 	          <div class="modal-content">
 	            <div class="modal-header">
 	              <button type="button" class="close" data-dismiss="modal">&times;</button>
+	              <div id="act">
 	              <h4 class="modal-title">{{act}}</h4>
+	          	  </div>
 	            </div>
 	            <div class="modal-body">
 	              <h5><b>Description</b><br></h5>
@@ -111,7 +113,9 @@
 	              <h5><b>Your Kinder Rating: </b>{{rating}}<br></h5>
 	            </div>
 	            <div class="modal-footer">
-	            	<input type="button" class="btn" value="Save My Edits" onclick="saveEdits()"/>
+	            	<div id="edit-btn">
+	            		<button type="button" class="btn">Save Edits</button>
+	            	</div>
 	            </div>
 
 	        </div>

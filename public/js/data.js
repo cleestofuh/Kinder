@@ -1,3 +1,11 @@
+$("#edit-btn").click(editKinder);
+
+function editKinder(e) {
+  e.preventDefault();
+  console.log("edit fuck this shit");
+  $(".modal-title").text("how to get user's input?");
+}
+
 $(function () {
     $('#week').highcharts({
         chart: {
