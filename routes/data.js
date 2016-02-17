@@ -23,3 +23,13 @@ exports.giveData = function(req, res){
   j++;
 	res.render('data', {kinderact:datajson["yourkinders"]});
 };
+
+exports.projectInfo = function (req, res) {
+  var projectID = req.params.datamodal;
+  console.log(projectID);
+  console.log("hello");
+
+  var project = datajson[1];
+  console.log(datajson[1]);
+  res.json(project);
+}

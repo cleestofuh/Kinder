@@ -46,6 +46,8 @@ app.get('/chart_info', chart_info.giveChart);
 app.get('/data', data.giveData);
 app.get('/streak', streak.giveStreak);
 
+app.get('/data/:datamodal', data.projectInfo);
+
 // Example route
 // app.get('/users', user.list);
 

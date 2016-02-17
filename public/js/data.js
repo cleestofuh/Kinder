@@ -3,7 +3,8 @@ $("#edit-btn").click(editKinder);
 function editKinder(e) {
   e.preventDefault();
   console.log("edit fuck this shit");
-  $(".modal-title").text("how to get user's input?");
+  var projectID = $(this).closest('.modal').attr('id');
+  console.log(projectID);
 }
 /*var i = 5;
 var j = 5;
