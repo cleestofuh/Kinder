@@ -1,4 +1,4 @@
-var datajson = require('../data.json');
+var datajson = require('../public/data.json');
 var i = 5;
 var j = 5;
 exports.giveData = function(req, res){
