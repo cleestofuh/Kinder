@@ -1,4 +1,4 @@
-var datajson = require('../data.json');
+var datajson = require('../public/data.json');
 
 
 exports.giveStreak = function(req, res){

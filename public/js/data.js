@@ -5,6 +5,34 @@ function editKinder(e) {
   console.log("edit fuck this shit");
   $(".modal-title").text("how to get user's input?");
 }
+/*var i = 5;
+var j = 5;
+$(document).ready(function(){
+    $('#yourself-form').on('submit', function(e){
+        e.preventDefault();
+        $.getJSON("data.json", function(data) {
+          var newKinderYou = {
+                "datamodal": "ykModal" + i,
+                "act": req.query.whatyoudo,
+                "description": req.query.howyoufeel,
+                "rating": req.query.rating
+            };
+
+          var newKinderOther = {
+                "datamodal": "okModal5" + j,
+                "act": req.query.whatyoudoO,
+                "description": req.query.howyoufeelO,
+                "rating": req.query.ratingO
+            };
+
+          data["yourkinders"].push(newKinderYou);
+          data["otherkinders"].push(newKinderOther);
+          i++;
+          j++;
+        });
+
+    });
+});*/
 
 $(function () {
     $('#week').highcharts({
