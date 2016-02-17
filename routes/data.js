@@ -1,4 +1,5 @@
 var datajson = require('../public/data.json');
+var kindersjson = require('../public/kinders.json')
 var i = 5;
 var j = 5;
 exports.giveData = function(req, res){
@@ -17,11 +18,11 @@ exports.giveData = function(req, res){
         "rating": req.query.ratingO
     };
 
-  datajson["yourkinders"].push(newKinderYou);
-  datajson["otherkinders"].push(newKinderOther);
+  kindersjson["yourkinders"].push(newKinderYou);
+  kindersjson["otherkinders"].push(newKinderOther);
   i++;
   j++;
-	res.render('data', {kinderact:datajson["yourkinders"]});
+	res.render('data', {kinderact:kindersjson["yourkinders"]});
 };
 
 exports.projectInfo = function (req, res) {
