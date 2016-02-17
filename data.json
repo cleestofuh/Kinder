@@ -24,5 +24,33 @@
       "description": "Hopefully Eunice will get an A.",
       "rating": "2"
     }
+  ],
+
+  "streak" : [
+    {
+    "id": "friend1",
+    "name": "Chris Lo",
+    "current": "3",
+    "longest": "52",
+    "most": "5",
+    "total": "100"
+  },
+  {
+    "id": "friend2",
+    "name": "Kevin Jan",
+    "current": "4",
+    "longest": "60",
+    "most": "9",
+    "total": "99"
+  },
+  {
+    "id": "friend3",
+    "name": "Eunice Wong",
+    "current": "3",
+    "longest": "78",
+    "most": "54",
+    "total": "123"
+  }
   ]
+  
 }

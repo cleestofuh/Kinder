@@ -1,10 +1,8 @@
-var streakjson = require('../streak.json');
+var datajson = require('../data.json');
 
 
 exports.giveStreak = function(req, res){
-  res.render('streak', {
-    'streak': streakjson
-  });
+  res.render('streak', {streak:datajson["streak"]});
 };
 
 /*
