@@ -33,25 +33,29 @@
 
   "otherkinders" :[
     {
-      "datamodal": "okModal1",
+      "datamodal": "okModal0",
+      "btn-id": "0",
       "act": "BOUGHT FOOD FOR SOMEONE",
       "description": "I bought food for Eunice. I'm happy now.",
       "rating": "4"
     },
     {
-      "datamodal": "okModal2",
+      "datamodal": "okModal1",
+      "btn-id": "1",
       "act": "WALKED SOMEONE TO CLASS",
       "description": "I made Eunice go to class. I'm happy now.",
       "rating": "5"
     },
     {
-      "datamodal": "okModal3",
+      "datamodal": "okModal2",
+      "btn-id": "2",
       "act": "HELPED AN OLD LADY CROSS THE STREET",
       "description": "I walked an old lady named Eunice. I'm happy now.",
       "rating": "1"
     },
     {
-      "datamodal": "okModal4",
+      "datamodal": "okModal3",
+      "btn-id": "3",
       "act": "SAY GOODLUCK TO MY FRIEND BEFORE MIDTERM",
       "description": "Hopefully Eunice will get an A.",
       "rating": "1"

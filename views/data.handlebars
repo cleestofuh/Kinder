@@ -56,7 +56,11 @@
 				<div id="recentData" class="animated zoomIn">
 					<ul>
 						{{#each yourkinderact}}
+<<<<<<< HEAD
 					  <li>
+=======
+					  <li class="{{btn-id}}">
+>>>>>>> 4553761f7a94445fa1c5896a2fc7337592f535f4
 					  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
 			            	{{act}}
 			        	</button>
@@ -69,7 +73,7 @@
 				<div id="recentData" class="animated zoomIn">
 					<ul>
 						{{#each otherkinderact}}
-						<li>
+						<li class="{{btn-id}}">
 							<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
 										{{act}}
 								</button>
@@ -118,8 +122,8 @@
 	              <h5><b>Your Kinder Rating: </b>{{rating}}<br></h5>
 	            </div>
 	            <div class="modal-footer">
-	            	<div id="delete-btn">
-	            		<button type="button" class="btn" data-dismiss="modal" onclick="deleteKinder()">Delete</button>
+	            	<div class="remove" id="delete-btn">
+	            		<button type="button" class="btn" data-dismiss="modal">Delete</button>
 	            	</div>
 	            </div>
 
@@ -146,11 +150,10 @@
 								<h5><b>Your Kinder Rating: </b>{{rating}}<br></h5>
 							</div>
 							<div class="modal-footer">
-								<div id="edit-btn">
-									<button type="button" class="btn">Save Edits</button>
-								</div>
-							</div>
-
+        				<div class="remove" id="delete-btn">
+        					<button type="button" class="btn" data-dismiss="modal">Delete</button>
+        				</div>
+        			</div>
 					</div>
 				</div>
 			</div>
