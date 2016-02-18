@@ -1,11 +1,11 @@
-$("#edit-btn").click(editKinder);
-
-function editKinder(e) {
+$("#delete-btn").click(function(e) {
   e.preventDefault();
-  console.log("edit fuck this shit");
   var projectID = $(this).closest('.modal').attr('id');
   console.log(projectID);
-}
+  var id = "#"+projectID
+  //$(btnRecent).hide();
+  });
+
 /*var i = 5;
 var j = 5;
 $(document).ready(function(){
