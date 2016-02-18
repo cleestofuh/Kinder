@@ -52,26 +52,31 @@
 	</div>
 	<div class="container">
 		<div class="text-center">
-			<div id="recentData" class="animated zoomIn">
-				<ul>
-					{{#each kinderact}}
-				  <li>
-				  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
-		            	{{act}}
-		        	</button>
-				  </li>
-					{{/each}}
-			<!--	  <li>
-				  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#dailyModal1">
-		            	WALKED SOMEONE TO CLASS
-		        	</button>
-				  </li>
-				  <li>
-				  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#dailyModal1">
-		            	HELPED AN OLD LADY CROSS THE STREET
-		        	</button>
-				  </li>-->
-				</ul>
+			<div class="col-md-6">
+				<div id="recentData" class="animated zoomIn">
+					<ul>
+						{{#each yourkinderact}}
+					  <li>
+					  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+			            	{{act}}
+			        	</button>
+					  </li>
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div id="recentData" class="animated zoomIn">
+					<ul>
+						{{#each otherkinderact}}
+						<li>
+							<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+										{{act}}
+								</button>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -94,7 +99,7 @@
     	<span class="glyphicon glyphicon-question-sign animated slideInUp clickable" aria-hidden="true" data-toggle="modal" data-target="#helpModal"></span>
   	</div>
 
-		{{#each kinderact}}
+		{{#each yourkinderact}}
 	  	  <div class="modal fade" id="{{datamodal}}" role="dialog">
 	        <div class="modal-dialog">
 	          <!-- Modal content -->
@@ -120,6 +125,34 @@
 
 	        </div>
 	      </div>
+			</div>
+		{{/each}}
+		{{#each otherkinderact}}
+				<div class="modal fade" id="{{datamodal}}" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content -->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<div id="act">
+								<h4 class="modal-title">{{act}}</h4>
+								</div>
+							</div>
+							<div class="modal-body">
+								<h5><b>Description</b><br></h5>
+								<div id="edit" contenteditable="true">
+									<h5>{{description}}</h5>
+								</div>
+								<h5><b>Your Kinder Rating: </b>{{rating}}<br></h5>
+							</div>
+							<div class="modal-footer">
+								<div id="edit-btn">
+									<button type="button" class="btn">Save Edits</button>
+								</div>
+							</div>
+
+					</div>
+				</div>
 			</div>
 		{{/each}}
 
