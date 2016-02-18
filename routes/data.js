@@ -12,17 +12,23 @@ exports.giveData = function(req, res){
     };
 
   var newKinderOther = {
-        "datamodal": "okModal5" + j,
+        "datamodal": "okModal" + j,
         "act": req.query.whatyoudoO,
         "description": req.query.howyoufeelO,
         "rating": req.query.ratingO
     };
 
-  kindersjson["yourkinders"].push(newKinderYou);
-  kindersjson["otherkinders"].push(newKinderOther);
-  i++;
-  j++;
-	res.render('data', {kinderact:kindersjson["yourkinders"]});
+  if(newKinderYou.act != null) {
+    kindersjson["yourkinders"].push(newKinderYou);
+    i++;
+  }
+
+  if(newKinderOther.act != null) {
+    kindersjson["otherkinders"].push(newKinderOther);
+    j++;
+  }
+  console.log(kindersjson["otherkinders"][i-2]);
+	res.render('data', {yourkinderact:kindersjson["yourkinders"], otherkinderact:kindersjson["otherkinders"]});
 };
 
 exports.projectInfo = function (req, res) {
