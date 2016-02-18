@@ -6,6 +6,7 @@ exports.giveData = function(req, res){
 
   var newKinderYou = {
         "datamodal": "ykModal" + i,
+        "btn-id": i,
         "act": req.query.whatyoudo,
         "description": req.query.howyoufeel,
         "rating": req.query.rating
@@ -13,6 +14,7 @@ exports.giveData = function(req, res){
 
   var newKinderOther = {
         "datamodal": "okModal" + j,
+        "btn-id": j,
         "act": req.query.whatyoudoO,
         "description": req.query.howyoufeelO,
         "rating": req.query.ratingO
