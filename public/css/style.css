@@ -49,6 +49,13 @@ p {
   color: #fff;
   width: 200px;
 }
+.btnTab {
+  margin: 0;
+  width:33%;
+  height: 40px;
+  text-align: center;
+  font-size: 10pt;
+}
 
 .btnRecent {
   margin: 5px;
@@ -57,7 +64,7 @@ p {
   color: #fff;
   width: 250px;
   -moz-border-radius:10px;
-  -webkit-border-radius:10px; 
+  -webkit-border-radius:10px;
 }
 
 .btnRecent:hover{
@@ -155,7 +162,7 @@ p {
     margin-left: 0;
 }
 
-#recentDataTitle{
+.recentDataTitle{
   font-size: 40pt;
   font-family: 'Open Sans Condensed', sans-serif;
   color: #fff;
@@ -178,7 +185,6 @@ ul {
   min-width: 310px;
   height: 200px;
   margin-bottom: 10px;
-  border: 1px solid white;
 }
 #week {
   -webkit-animation-delay: 0.0s;

@@ -46,57 +46,148 @@
 		</nav>
 
 	<div class="container">
-		<div id="recentDataTitle" class="animated zoomIn">
-			TODAY'S KINDERS
-		</div>
-	</div>
-	<div class="container">
 		<div class="text-center">
-			<div class="col-md-6">
-				<div id="recentData" class="animated zoomIn">
-					<ul>
-						{{#each yourkinderact}}
-<<<<<<< HEAD
-					  <li>
-=======
-					  <li class="{{btn-id}}">
->>>>>>> 4553761f7a94445fa1c5896a2fc7337592f535f4
-					  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
-			            	{{act}}
-			        	</button>
-					  </li>
-						{{/each}}
-					</ul>
-				</div>
+			<div class="btn-group" data-toggle="btns">
+			  <button class="btn btn-lg btnTab active" href="#daily" data-toggle="tab">DAILY</button>
+			  <button class="btn btn-lg btnTab" href="#weekly" data-toggle="tab">WEEKLY</button>
+			  <button class="btn btn-lg btnTab" href="#monthly" data-toggle="tab">MONTHY</button>
 			</div>
-			<div class="col-md-6">
-				<div id="recentData" class="animated zoomIn">
-					<ul>
-						{{#each otherkinderact}}
-						<li class="{{btn-id}}">
-							<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
-										{{act}}
-								</button>
-						</li>
-						{{/each}}
-					</ul>
+
+			<div class="tab-content">
+			  <div class="tab-pane active" id="daily">
+						<div class="recentDataTitle animated zoomIn">
+							YOUR KINDER DATA
+						</div>
+
+						<div class="container">
+							<div id="week" class="animated zoomIn chart"></div>
+						</div>
+						<div class="col-md-6">
+							<div class="recentDataTitle animated zoomIn">
+								YOUR KINDERS
+							</div>
+							<div id="recentData" class="animated zoomIn">
+								<ul>
+									{{#each yourkinderact}}
+									<li class="{{btn-id}}">
+										<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+													{{act}}
+											</button>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="recentDataTitle animated zoomIn">
+								OTHER KINDERS
+							</div>
+							<div id="recentData" class="animated zoomIn">
+								<ul>
+									{{#each otherkinderact}}
+									<li class="{{btn-id}}">
+										<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+													{{act}}
+											</button>
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+
 				</div>
+
+			  <div class="tab-pane" id="weekly">
+					<div class="recentDataTitle animated zoomIn">
+						YOUR KINDER DATA
+					</div>
+
+					<div class="container">
+						<div id="month" class="animated zoomIn chart"></div>
+					</div>
+					<div class="col-md-6">
+						<div class="recentDataTitle animated zoomIn">
+							YOUR KINDERS
+						</div>
+						<div id="recentData" class="animated zoomIn">
+							<ul>
+								{{#each yourkinderact}}
+								<li class="{{btn-id}}">
+									<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+												{{act}}
+										</button>
+								</li>
+								{{/each}}
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="recentDataTitle animated zoomIn">
+							OTHER KINDERS
+						</div>
+						<div id="recentData" class="animated zoomIn">
+							<ul>
+								{{#each otherkinderact}}
+								<li class="{{btn-id}}">
+									<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+												{{act}}
+										</button>
+								</li>
+								{{/each}}
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			  <div class="tab-pane" id="monthly">
+					<div class="recentDataTitle animated zoomIn">
+						YOUR KINDER DATA
+					</div>
+
+					<div class="container">
+						<div id="year" class="animated zoomIn chart"></div>
+					</div>
+					<div class="col-md-6">
+						<div class="recentDataTitle animated zoomIn">
+							YOUR KINDERS
+						</div>
+						<div id="recentData" class="animated zoomIn">
+							<ul>
+								{{#each yourkinderact}}
+								<li class="{{btn-id}}">
+									<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+												{{act}}
+										</button>
+								</li>
+								{{/each}}
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="recentDataTitle animated zoomIn">
+							OTHER KINDERS
+						</div>
+						<div id="recentData" class="animated zoomIn">
+							<ul>
+								{{#each otherkinderact}}
+								<li class="{{btn-id}}">
+									<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
+												{{act}}
+										</button>
+								</li>
+								{{/each}}
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
 			</div>
+
+
 		</div>
 	</div>
-
-
-	<div>
-		<div id="recentDataTitle" class="animated zoomIn">
-			YOUR KINDER DATA
-		</div>
-	</div>
-
-    <div class="container">
-      <div onclick="location.href='chart_info'" id="week" class="animated zoomIn chart hvr-shrink"></div>
-      <div onclick="location.href='chart_info'" id="month" class="animated zoomIn chart hvr-shrink"></div>
-      <div onclick="location.href='chart_info'" id="year" class="animated zoomIn chart hvr-shrink"></div>
-    </div>
 
     <!-- THIS IS FOR THE HELP BUTTON -->
     <div class="row">
