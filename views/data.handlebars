@@ -56,7 +56,7 @@
 				<div id="recentData" class="animated zoomIn">
 					<ul>
 						{{#each yourkinderact}}
-					  <li id="{{btn-id}}">
+					  <li>
 					  	<button type="button" class="btnRecent hvr-shrink" data-toggle="modal" data-target="#{{datamodal}}">
 			            	{{act}}
 			        	</button>
@@ -119,7 +119,7 @@
 	            </div>
 	            <div class="modal-footer">
 	            	<div id="delete-btn">
-	            		<button type="button" class="btn" data-dismiss="modal">Delete</button>
+	            		<button type="button" class="btn" data-dismiss="modal" onclick="deleteKinder()">Delete</button>
 	            	</div>
 	            </div>
 
