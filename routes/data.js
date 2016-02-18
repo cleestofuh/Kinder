@@ -33,7 +33,7 @@ exports.giveData = function(req, res){
 
 exports.projectInfo = function (req, res) {
   var projectID = req.params.datamodal;
-  var index = projectID = projectID.substr('ykModal'.length);
+  var index = projectID.substr('ykModal'.length);
   //console.log(projectID);
   //console.log("hello");
 

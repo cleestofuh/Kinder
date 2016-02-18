@@ -1,9 +1,12 @@
 $("#delete-btn").click(function(e) {
   e.preventDefault();
+  console.log("hello");
   var projectID = $(this).closest('.modal').attr('id');
   console.log(projectID);
-  var id = "#"+projectID
-  //$(btnRecent).hide();
+  var index = projectID.substr('ykModal'.length);
+  console.log(index);
+  index = "#" + index;
+  $(index).hide();
   });
 
 /*var i = 5;
