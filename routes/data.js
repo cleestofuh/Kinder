@@ -17,19 +17,20 @@ exports.giveData = function(req, res){
         "rating": req.query.ratingO
     };
 
-  datajson["yourkinders"].push(newKinderYou);
-  datajson["otherkinders"].push(newKinderOther);
+  //datajson["yourkinders"].push(newKinderYou);
+  //datajson["otherkinders"].push(newKinderOther);
   i++;
   j++;
-	res.render('data', {kinderact:datajson["yourkinders"]});
+	res.render('data', {kinderact:datajson});
 };
 
 exports.projectInfo = function (req, res) {
   var projectID = req.params.datamodal;
-  console.log(projectID);
-  console.log("hello");
+  var index = projectID = projectID.substr('ykModal'.length);
+  //console.log(projectID);
+  //console.log("hello");
 
-  var project = datajson[1];
-  console.log(datajson[1]);
+  var project = datajson[index];
+  //console.log(datajson[1]);
   res.json(project);
 }
