@@ -21,12 +21,12 @@ exports.giveData = function(req, res){
     };
 
   if(newKinderYou.act != null) {
-    kindersjson["yourkinders"].push(newKinderYou);
+    kindersjson["yourkinders"].unshift(newKinderYou);
     i++;
   }
 
   if(newKinderOther.act != null) {
-    kindersjson["otherkinders"].push(newKinderOther);
+    kindersjson["otherkinders"].unshift(newKinderOther);
     j++;
   }
   console.log(kindersjson["otherkinders"][i-2]);
