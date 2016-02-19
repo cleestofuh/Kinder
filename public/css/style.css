@@ -203,6 +203,9 @@ ul {
 #year {
   -webkit-animation-delay: 1s;
 }
+.inline{
+  display: inline;
+}
 
 /* STREAKS */
 .homestreak {
@@ -283,3 +286,5 @@ h3{
   }
 
 }
+
+
