@@ -57,6 +57,14 @@ p {
   font-size: 10pt;
 }
 
+.btnTab1{
+  margin: 0;
+  width:50%;
+  height: 40px;
+  text-align: center;
+  font-size: 10pt;
+}
+
 .btnRecent {
   margin: 5px;
   background-color: #ED888B;
