@@ -149,6 +149,12 @@ p {
 }
 
 /* HELP */
+
+#fixedbutton{
+  position:fixed;
+  bottom:0px;
+  right:0px;
+}
 .glyphicon {
   color: #fff;
   font-size: 30px;
