@@ -56,7 +56,7 @@ $(function () {
             style: {
               color: 'white'
             },
-            text: 'WEEK',
+            text: 'DAILY',
             x: -20 //center
         },
         xAxis: {
@@ -115,7 +115,7 @@ $(function () {
             style: {
               color: 'white'
             },
-            text: 'MONTH',
+            text: 'WEEKLY',
             x: -20 //center
         },
         xAxis: {
@@ -174,7 +174,7 @@ $(function () {
             style: {
               color: 'white'
             },
-            text: 'YEAR',
+            text: 'MONTHLY',
             x: -20 //center
         },
         xAxis: {
