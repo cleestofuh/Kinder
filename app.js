@@ -10,9 +10,9 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var challenge = require('./routes/challenge');
-var chart_info = require('./routes/chart_info');
 var data = require('./routes/data');
 var streak = require('./routes/streak');
+var reflection = require('./routes/reflection');
 
 // Example route
 // var user = require('./routes/user');
@@ -42,11 +42,10 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/challenge', challenge.giveChallenge);
-app.get('/chart_info', chart_info.giveChart);
 app.get('/data', data.giveData);
 app.get('/streak', streak.giveStreak);
-
 app.get('/data/:datamodal', data.projectInfo);
+app.get('/reflection', reflection.view);
 
 // Example route
 // app.get('/users', user.list);
