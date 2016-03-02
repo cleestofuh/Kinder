@@ -60,7 +60,7 @@ function displayData(result) {
   //console.log(result['yourkinders'][0]['category']);
   //console.log(result['yourkinders'].length);
   //var description = container.find('.act-desc').text();
-  var choice = $('ul.nav-pills li a').val();
+  var choice = $('#selectedCat').text();
   var projectID;
   choice = choice.substr(0,choice.length-1);
   console.log("choice: "+ choice);
