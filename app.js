@@ -44,8 +44,12 @@ app.get('/', index.view);
 app.get('/challenge', challenge.giveChallenge);
 app.get('/data', data.giveData);
 app.get('/streak', streak.giveStreak);
-app.get('/data/:datamodal', data.projectInfo);
+
+app.post('/data', data.projectInfo);
+app.post('/dataDelete', data.deleteKinder);
+
 app.get('/reflection', reflection.view);
+
 
 // Example route
 // app.get('/users', user.list);
