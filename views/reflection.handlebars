@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<!--{{> selectExperiment}}-->
+		{{> selectExperiment}}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 		<title>GRAPE</title>
@@ -56,14 +56,14 @@
 			</div>
 			<div class="form-group">
 				<label for="category" style="color:white;font-family:'Open Sans Condensed', sans-serif;font-weight:300;">Choose a category</label>
-				<select class="form-control" name="category" id="category">
-					<option id="catLove">Love</option>
-					<option id="catTime">Time</option>
-					<option id="catEnergy">Energy</option>
-					<option id="catCharity">Charity</option>
-					<option id="catHealthy">Health</option>
-					<option id="catOther">Other</option>
-				</select>
+				<ul class="nav nav-pills text-center" style="font-size:12pt;">
+					<li class="active"><a href="#">Love</a></li>
+					<li><a href="#">Time</a></li>
+					<li><a href="#">Energy</a></li>
+					<li><a href="#">Charity</a></li>
+					<li><a href="#">Health</a></li>
+					<li><a href="#">Other</a></li>
+				</ul>
 			</div>
 
 
